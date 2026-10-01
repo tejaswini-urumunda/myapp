@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+```jsx
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <h2>MyApp</h2>
+        <a href="/">Home</a>
+        <a href="/">About</a>
+        <a href="/">Contact</a>
+      </nav>
+
+      <h1>Welcome to MyApp</h1>
+
+      <form>
+        <h2>Contact Form</h2>
+
+        <input
+          type="text"
+          placeholder="Enter your name"
+        />
+        <br /><br />
+
+        <input
+          type="email"
+          placeholder="Enter your email"
+        />
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 }
 
 export default App;
+```
